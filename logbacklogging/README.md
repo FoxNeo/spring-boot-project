@@ -1,6 +1,6 @@
 # logbacklogging with spring boot
 
-This projects creates a log directory and generate the logs.
+This project creates a log directory and generate the logs.
 
 Run
 ===
