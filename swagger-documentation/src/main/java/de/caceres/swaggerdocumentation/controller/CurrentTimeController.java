@@ -10,9 +10,9 @@ import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 
 @RestController
-public class CurrentTime {
+public class CurrentTimeController {
 
-    private static final Logger LOG = LoggerFactory.getLogger(CurrentTime.class);
+    private static final Logger LOG = LoggerFactory.getLogger(CurrentTimeController.class);
 
     private static final SimpleDateFormat formater = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
 
