@@ -4,8 +4,9 @@ Repository for projects created with the Spring boot framework
 
 ### Prerequisites
 
-* Java 8 SDK
+* Java 11 SDK or OpenJDK
 * Maven
+* Docker
 
 ## Author
 
