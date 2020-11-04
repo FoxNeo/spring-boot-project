@@ -20,5 +20,7 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
-    - name: Build with Maven
+    - name: Build swagger-documentation with Maven
       run: mvn -B package --file swagger-documentation/pom.xml
+    - name: Buld externalwar with Maven
+      run: mvn -B package --file externalwar/pom.xml
