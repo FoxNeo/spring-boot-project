@@ -20,7 +20,27 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
-    - name: Build swagger-documentation with Maven
-      run: mvn -B package --file swagger-documentation/pom.xml
     - name: Buld externalwar with Maven
       run: mvn -B package --file externalwar/pom.xml
+    - name: Build swagger-documentation with Maven
+      run: mvn -B package --file swagger-documentation/pom.xml
+    - name: Running Test swagger-documentation with Maven
+      run: mvn -B test --file swagger-documentation/pom.xml
+    - name: Build log4jlogging with Maven
+      run: mvn -B package --file log4jlogging/pom.xml
+    - name: Build logbacklogging with Maven
+      run: mvn -B package --file logbacklogging/pom.xml
+    - name: Build restendpointget with Maven
+      run: mvn -B package --file restendpointget/pom.xml
+    - name: Build restendpointpost with Maven
+      run: mvn -B package --file restendpointpost/pom.xml
+    - name: Build sample-rest with Maven
+      run: mvn -B package --file sample-rest/pom.xml
+    - name: Build spring-course with Maven
+      run: mvn -B package --file spring-course/pom.xml
+    - name: Build understandproperties with Maven
+      run: mvn -B package --file understandproperties/pom.xml
+    - name: Build understandpropertiesAdvance with Maven
+      run: mvn -B package --file understandpropertiesAdvance/pom.xml
+    - name: Build yamlproperties with Maven
+      run: mvn -B package --file yamlproperties/pom.xml
