@@ -24,10 +24,6 @@ jobs:
       run: mvn -B package --file externalwar/pom.xml
     - name: Build swagger-documentation with Maven
       run: mvn -B package --file swagger-documentation/pom.xml
-    - name: Running Test swagger-documentation with Maven
-      run: mvn -B test --file swagger-documentation/pom.xml
-    - name: Build log4jlogging with Maven
-      run: mvn -B package --file log4jlogging/pom.xml
     - name: Build logbacklogging with Maven
       run: mvn -B package --file logbacklogging/pom.xml
     - name: Build restendpointget with Maven
