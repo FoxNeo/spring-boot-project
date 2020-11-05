@@ -28,15 +28,3 @@ jobs:
       run: mvn -B package --file logbacklogging/pom.xml
     - name: Build restendpointget with Maven
       run: mvn -B package --file restendpointget/pom.xml
-    - name: Build restendpointpost with Maven
-      run: mvn -B package --file restendpointpost/pom.xml
-    - name: Build sample-rest with Maven
-      run: mvn -B package --file sample-rest/pom.xml
-    - name: Build spring-course with Maven
-      run: mvn -B package --file spring-course/pom.xml
-    - name: Build understandproperties with Maven
-      run: mvn -B package --file understandproperties/pom.xml
-    - name: Build understandpropertiesAdvance with Maven
-      run: mvn -B package --file understandpropertiesAdvance/pom.xml
-    - name: Build yamlproperties with Maven
-      run: mvn -B package --file yamlproperties/pom.xml
