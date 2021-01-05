@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title th:text="${titulo}"></title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<h1 class="red-color" th:text="${titulo}"></h1>
+<h2 class="blue-color">CSS Style static resources</h2>
+<img th:src="@{/img/mr-robot.jpg}"/>
+	<table th:if="${not users.isEmpty()}">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Surname</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="user: ${users}">
+				<td th:text="${user.name}"></td>
+				<td th:text="${user.surname}"></td>
+				<td th:text="${user.email}"></td>
+			</tr>
+
+		</tbody>
+	</table>
+
+</body>
+</html>
