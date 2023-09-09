@@ -10,14 +10,9 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  * @author Miguel Caceres This Spring Boot application runs on Tomcat
  */
 @SpringBootApplication
-public class ExternalwarApplication extends SpringBootServletInitializer {
+public class ExternalwarApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ExternalwarApplication.class, args);
-	}
-
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-		return super.configure(builder);
 	}
 }
