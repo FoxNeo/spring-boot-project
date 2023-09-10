@@ -19,6 +19,7 @@ jobs:
     - name: Set up JDK 17
       uses: actions/setup-java@v3
       with:
+        distribution: 'oracle' # See 'Supported distributions' for available options
         java-version: 17
     - name: Buld externalwar with Maven
       run: mvn -B package --file externalwar/pom.xml
