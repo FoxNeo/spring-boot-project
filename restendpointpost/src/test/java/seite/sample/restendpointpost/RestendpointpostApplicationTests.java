@@ -1,13 +1,15 @@
 package seite.sample.restendpointpost;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+import site.sample.restendpointpost.RestendpointpostApplication;
+
+
+@SpringBootTest(classes = RestendpointpostApplication.class)
 public class RestendpointpostApplicationTests {
+
 
 	@Test
 	public void contextLoads() {
