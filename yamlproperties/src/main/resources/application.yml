@@ -1,12 +1,3 @@
-spring:
-  profiles:
-    active: qa
-
-
----
-spring:
-  profiles: dev
-
 server:
   port: 9090
 
@@ -24,7 +15,9 @@ course:
 
 ---
 spring:
-  profiles: qa
+  config:
+    activate:
+      on-profile: qa
 
 server:
   port: 9091

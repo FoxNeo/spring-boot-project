@@ -30,8 +30,8 @@ public class RestEndpointsController {
 	/**
 	 * examples:
 	 * <ul>
-	 * <li>http://localhost:8080/course?name=Miguel&chapterCount=6</li>
-	 * <li>http://localhost:8080/course</li>
+	 * <li>http://localhost:9090/course?name=Miguel&chapterCount=6</li>
+	 * <li>http://localhost:9090/course</li>
 	 * </ul>
 	 * 
 	 * @param name
@@ -48,8 +48,8 @@ public class RestEndpointsController {
 	/**
 	 * examples:
 	 * <ul>
-	 * <li>http://localhost:8080/course?name=Miguel&chapterCount=6</li>
-	 * <li>http://localhost:8080/course</li>
+	 * <li>http://localhost:9090/course?name=Miguel&chapterCount=6</li>
+	 * <li>http://localhost:9090/course</li>
 	 * </ul>
 	 * 
 	 * @param name
@@ -69,8 +69,8 @@ public class RestEndpointsController {
 	/**
 	 * examples:
 	 * <ul>
-	 * <li>http://localhost:8080/course?name=Miguel&chapterCount=6</li>
-	 * <li>http://localhost:8080/course</li>
+	 * <li>http://localhost:9090/course?name=Miguel&chapterCount=6</li>
+	 * <li>http://localhost:9090/course</li>
 	 * </ul>
 	 * 
 	 * @param name
@@ -86,7 +86,7 @@ public class RestEndpointsController {
 	/**
 	 * paths:
 	 * <ul>
-	 * <li>http://localhost:8080/register/course</li> body { "name": "Miguel",
+	 * <li>http://localhost:9090/register/course</li> body { "name": "Miguel",
 	 * "chapterCount": 6 }
 	 * </ul>
 	 * 
