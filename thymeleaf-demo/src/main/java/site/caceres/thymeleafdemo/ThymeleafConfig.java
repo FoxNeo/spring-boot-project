@@ -1,12 +1,11 @@
 package site.caceres.thymeleafdemo;
 
+import nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.thymeleaf.spring5.SpringTemplateEngine;
-import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
-
-import nz.net.ultraq.thymeleaf.LayoutDialect;
+import org.thymeleaf.spring6.SpringTemplateEngine;
+import org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver;
 
 /**
  * 
@@ -32,6 +31,11 @@ public class ThymeleafConfig {
 		templateResolver.setTemplateMode("HTML");
 		templateResolver.setCacheable(false);
 		return templateResolver;
+	}
+
+	@Bean
+	public LayoutDialect layoutDialect() {
+		return new LayoutDialect();
 	}
 
 }
