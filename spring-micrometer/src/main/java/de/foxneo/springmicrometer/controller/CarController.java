@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CarController {
 
   Logger log = LoggerFactory.getLogger(CarController.class);
+
   @GetMapping("/api/status")
   public CarStatus getStatus() {
     log.info("getStatus() has been called");
