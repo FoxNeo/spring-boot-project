@@ -1,0 +1,25 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "17",
+            "default": "17"
+        }
+    },
+    "remoteEnv": {
+        // This is a common path for Java 17 installed via the Dev Container feature/Universal image
+        "JAVA_HOME": "/usr/local/sdkman/candidates/java/17.0.17-ms" 
+    },
+    "postCreateCommand": "echo 'export JAVA_HOME=/usr/local/sdkman/candidates/java/17.0.17-ms' >> ~/.bashrc",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "java.server.launchMode": "Standard"
+            },
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    }
+}
