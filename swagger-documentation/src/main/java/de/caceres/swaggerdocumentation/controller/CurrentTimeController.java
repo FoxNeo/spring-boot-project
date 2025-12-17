@@ -18,6 +18,7 @@ public class CurrentTimeController {
 
     @RequestMapping(value = "/time", method = RequestMethod.GET)
     public String getCurrentTime(){
+        LOG.info("Received request for current time");
         return generateTimestamp();
     }
 
