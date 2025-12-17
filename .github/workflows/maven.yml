@@ -21,11 +21,25 @@ jobs:
       with:
         distribution: 'oracle' # See 'Supported distributions' for available options
         java-version: 17
-    - name: Buld externalwar with Maven
+    - name: Build externalwar with Maven
       run: mvn -B package --file externalwar/pom.xml
-    - name: Build swagger-documentation with Maven
-      run: mvn -B package --file swagger-documentation/pom.xml
+    - name: Build log4jlogging with Maven
+      run: mvn -B package --file log4jlogging/pom.xml
     - name: Build logbacklogging with Maven
       run: mvn -B package --file logbacklogging/pom.xml
+    - name: Build login-spring-security with Maven
+      run: mvn -B package --file login-spring-security/pom.xml
     - name: Build restendpointget with Maven
       run: mvn -B package --file restendpointget/pom.xml
+    - name: Build restendpointpost with Maven
+      run: mvn -B package --file restendpointpost/pom.xml
+    - name: Build sample-rest with Maven
+      run: mvn -B package --file sample-rest/pom.xml
+    - name: Build spring-boot-web with Maven
+      run: mvn -B package --file spring-boot-web/pom.xml
+    - name: Build spring-course with Maven
+      run: mvn -B package --file spring-course/pom.xml
+    - name: Build spring-micrometer with Maven
+      run: mvn -B package --file spring-micrometer/pom.xml
+    - name: Build swagger-documentation with Maven
+      run: mvn -B package --file swagger-documentation/pom.xml
